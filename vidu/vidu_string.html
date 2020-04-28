@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="">
+		body {
+			width: 800px;
+			margin: 0 auto;
+			padding-left: 30px;
+			padding-bottom: 50px;
+		}
+		span {
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>VÍ DỤ CHUỖI</h1>
+	<img src="../img/string.png" width="700px;"><br>
+	<h1>Ví dụ ta có chuỗi: <mark>Võ Chí Trung Võ Chí Trung </mark></h1>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>length</span></p>
+		<button onclick="str_length()"> <p>Str.<span>length</span></p> </button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>indexOf()</span> tìm chữ Trung đầu tiên</p>
+		<button onclick="str_indexOf()"><p>Str.<span>indexOf("Trung")</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>lastindexOf</span> tìm chữ Trung cuối cùng</p>
+		<button onclick="str_lastIndexOf()"><p>Str.<span>lastIndexOf("Trung")</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>search</span> tìm chữ Trung giống hàm indexOf</p>
+		<button onclick="str_search()"><p>Str.<span>search("Trung")</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>slide</span> cắt chuổi con từ vị trí 3 - 13</p>
+		<button onclick="str_slice()"><p>Str.<span>slice(3,13)</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>substring</span> cắt chuỗi con từ vị trí start tới vị trí trước end</p>
+		<button onclick="str_string()"><p>Str.<span>substring(3,13)</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>substr</span>  cắt chuỗi con từ vị trí start lấy length ký tự</p>
+		<button onclick="str_str()"><p>Str.<span>substr(3,13)</span></p></button><br><br>
+	<!--  -->
+	<script type="text/javascript">
+		function str_length(){
+			var Chuoi = "Võ Chí Trung Võ Chí Trung";
+			alert("Độ dài là: " + Chuoi.length);
+		}
+		function str_indexOf(){
+			var Chuoi = "Võ Chí Trung Võ Chí Trung";
+			alert("Tìm vị trí xuất hiện lần đầu tiên là: " + Chuoi.indexOf("Trung"));
+		}
+		function str_lastIndexOf(){
+			var Chuoi = "Võ Chí Trung Võ Chí Trung";
+			alert("Tìm vị trí xuất hiện cuối cùng là: " + Chuoi.lastIndexOf("Trung"));
+		}
+		function str_search(){
+			var Chuoi = "Võ Chí Trung Võ Chí Trung";
+			alert("Tìm vị trí xuất hiện cuối cùng là: " + Chuoi.search("Trung"));
+		}
+		function str_slice(){
+			var Chuoi = "Võ Chí Trung Võ Chí Trung";
+			alert("Chuỗi sau khi cắt từ 3-13 là : " + Chuoi.slice(3,13));
+		}
+		function str_string(){
+			var Chuoi = "Võ Chí Trung Võ Chí Trung";
+			alert("Chuỗi sau khi cắt từ 3-13 là : " + Chuoi.substring(3,13));
+		}
+		function str_str(){
+			var Chuoi = "Võ Chí Trung Võ Chí Trung";
+			alert("Chuỗi sau khi cắt từ 3-13 là : " + Chuoi.substr(3,13));
+		}
+	</script>
+	<h1>VÍ DỤ CHUỖI</h1>
+	<img src="../img/string2.png" width="700px;">
+	<h1>Ví dụ ta có chuỗi: <mark>Võ Chí Trung </mark></h1>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>replace()</span> thay thế chuỗi con <mark>Trung</mark> thành <mark>Mén</mark></p>
+		<button onclick="str_replace()"> <p>Str.<span>replace("Trung","Mén")</span></p> </button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>toUpperCase()</span> để trả chuỗi về dạng IN HOA</p>
+		<button onclick="str_toUpperCase()"><p>Str.<span>toUpperCase()</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>toLowerCase()</span> để trả chuỗi về dạng in thường</p>
+		<button onclick="str_toLowerCase()"><p>Str.<span>toLowerCase()</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>concat()</span> để trả về kết quả cộng chuỗi với chuỗi bất kỳ như "Vĩnh Long" + "Sinh năm 1999</p>
+		<button onclick="str_concat()"><p>Str.<span>concat()</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>charAt()</span> để trả ký tự tại vị trí index trong chuỗi</p>
+		<button onclick="str_charAt()"><p>Str.<span>charAt(3)</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>charCodeAt()</span> để trả mã unicode của ký tự tại vị trí index trong chuỗi</p>
+		<button onclick="str_charCodeAt()"><p>Str.<span>charCodeAt(3)</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>[index]</span> để trả mã unicode của ký tự tại vị trí index trong chuỗi</p>
+	<h2>Ví dụ ta có mãng: <mark>var Str = ["Võ", "Chí", "Trung"];</mark></h2>
+		<button onclick="str_index()"><p>Str.<span>[2]</span></p></button>
+	<!--  -->
+	<p>Sử dụng hàm Str.<span>split()</span> để cắt chuỗi thành mãng các chuổi nhỏ</p>
+		<button onclick="str_split()"><p>Str.<span>split("không")</span></p></button>
+	<!--  -->
+		<script type="text/javascript">
+		function str_replace(){
+			var Chuoi = "Võ Chí Trung";
+			alert("Chỗi sau khi replace: " + Chuoi.replace("Trung","Mén"));
+		}
+		function str_toUpperCase(){
+			var Chuoi = "Võ Chí Trung";
+			alert("Chuỗi sau khi Cập nhật: " + Chuoi.toUpperCase(Chuoi));
+		}
+		function str_toLowerCase(){
+			var Chuoi = "Võ Chí Trung";
+			alert("Chuỗi sau khi Cập nhật: " + Chuoi.toLowerCase(Chuoi));
+		}
+		function str_concat(){
+			var Chuoi = "Võ Chí Trung";
+			var Chuoi2 = " Ở Vĩnh Long ";
+			var Chuoi3 = " Sinh năm 1999";
+			alert("Chuỗi sau khi Cập nhật: " + Chuoi.concat(Chuoi2 + Chuoi3));
+		}
+		function str_charAt(){
+			var Chuoi = "Võ Chí Trung";
+			alert("Kết quả charAt(3) là : " + Chuoi.charAt(3));
+		}
+		function str_charCodeAt(){
+			var Chuoi = "Võ Chí Trung";
+			alert("Kết quả charCodeAt(3) là : " + Chuoi.charCodeAt(3));
+		}
+		function str_index(){
+			var Chuoi = ["Võ", "Chí", "Trung"];
+			alert("Kết quả Str[2] là : " + Chuoi[2]);
+		}
+		function str_split(){
+			var str = "tôi không phải là không muốn" ;
+			var str_array = str.split("không");
+			alert("Chuỗi sau khi cắt là: " + str_array);
+
+		}
+	</script>
+</body>
+</html>
